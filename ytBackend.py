@@ -16,7 +16,8 @@ main = Blueprint('main',__name__)
 def add_movies():
     
     urlTest=request.args.get('url')
-    key= 'AIzaSyAtVn2x_uZnGcdEX5o-Ldz6PTR4vrKc61Y'
+    #private key used to access API
+    key= 'REDACTED'
 
     youtube = build('youtube', 'v3', developerKey=key)
     inputedUlr=urlTest
