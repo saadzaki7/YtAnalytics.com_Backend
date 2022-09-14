@@ -4,7 +4,7 @@ import urllib
 from urllib.parse import urlparse
 
 
-key= 'AIzaSyAtVn2x_uZnGcdEX5o-Ldz6PTR4vrKc61Y'
+key= 'REDACTED'
 
 youtube = build('youtube', 'v3', developerKey=key)
 
