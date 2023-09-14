@@ -29,20 +29,6 @@ channelStat=request4.execute()
 request5= youtube.channels().list(part='snippet',id=channelId)
 channelSnippet=request5.execute()
 
-# request = youtube.channels().list(part='statistics',id='UCCezIgC97PvUuR4_gbFUs5g')
-
-# response= request.execute()
-
-
-
-
-
-# print(response3)
-# print(response2)
-# print("")
-# print(response)
-
-# r1={'kind': 'youtube#channelListResponse', 'etag': 'UP4ZEYGyDsSgomjZSy7d7EGCd8s', 'pageInfo': {'totalResults': 1, 'resultsPerPage': 5}, 'items': [{'kind': 'youtube#channel', 'etag': 'IzmdETOaIxT81D8Xfn9NgKnUhR0', 'id': 'UCCezIgC97PvUuR4_gbFUs5g', 'statistics': {'viewCount': '66527322', 'subscriberCount': '869000', 'hiddenSubscriberCount': False, 'videoCount': '230'}}]}
 
 r2={'kind': 'youtube#videoListResponse', 'etag': 'dJG7b74pZSrgbQCifEhwqDvzD_4', 'items': [{'kind': 'youtube#video', 'etag': 'Zd9-dETqifKmkorLi_aVb91SKnw', 'id': 'fJJyrfkda4w', 'statistics': {'viewCount': '6444', 'likeCount': '44', 'favoriteCount': '0', 'commentCount': '11'}}], 'pageInfo': {'totalResults': 1, 'resultsPerPage': 1}}
 
@@ -51,39 +37,6 @@ r3={'kind': 'youtube#videoListResponse', 'etag': 'e2Dozvqtm8bSkzq9QgrIZ8BzX9I', 
 r4={'kind': 'youtube#channelListResponse', 'etag': 'fcAOndd7JKxNsSHP-L-WuPnwuGQ', 'pageInfo': {'totalResults': 1, 'resultsPerPage': 5}, 'items': [{'kind': 'youtube#channel', 'etag': 'wnZWi18CPahycL7Q1bs181y-fls', 'id': 'UCvVZ19DRSLIC2-RUOeWx8ug', 'statistics': {'viewCount': '10375540', 'subscriberCount': '33300', 'hiddenSubscriberCount': False, 'videoCount': '908'}}]}
 
 r5={'kind': 'youtube#channelListResponse', 'etag': 'ENsF8wwcpiH4TYG-OyRuoZ58AMc', 'pageInfo': {'totalResults': 1, 'resultsPerPage': 5}, 'items': [{'kind': 'youtube#channel', 'etag': 'BG4Hlm49LkISyi8foWLdG8jIXew', 'id': 'UCvVZ19DRSLIC2-RUOeWx8ug', 'snippet': {'title': 'Jie Jenn', 'description': 'Just an average guy who enjoys data analysis and solve business problems.\n\nAbout Me:\nI am a self-taught data analyst/application developer (my first job was working as an Accountant, and almost got my CPA, but got sidetracked to focus on learning VBA), who learned everything through books, free tutorials, forum postings, and lots of practices and mistakes. In my channel you will find tutorials for Python (Data Analytics, Pandas, PyQt5 Development, Automation Scripts, Web Scraping, Google APIs, and many other things), Excel (including VBA), SQL, and other applications/software like Salesforce, Access, Outlook, etc.\n\nFor any question, please email\nYouTube@LearnDataAnalysis.org', 'customUrl': 'jiejenn', 'publishedAt': '2007-01-01T22:30:06Z', 'thumbnails': {'default': {'url': 'https://yt3.ggpht.com/ytc/AKedOLQr39FGEavhuhXz7Mxw7JmVFPY_ZbXdV8eAECJLCD0=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AKedOLQr39FGEavhuhXz7Mxw7JmVFPY_ZbXdV8eAECJLCD0=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AKedOLQr39FGEavhuhXz7Mxw7JmVFPY_ZbXdV8eAECJLCD0=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}, 'localized': {'title': 'Jie Jenn', 'description': 'Just an average guy who enjoys data analysis and solve business problems.\n\nAbout Me:\nI am a self-taught data analyst/application developer (my first job was working as an Accountant, and almost got my CPA, but got sidetracked to focus on learning VBA), who learned everything through books, free tutorials, forum postings, and lots of practices and mistakes. In my channel you will find tutorials for Python (Data Analytics, Pandas, PyQt5 Development, Automation Scripts, Web Scraping, Google APIs, and many other things), Excel (including VBA), SQL, and other applications/software like Salesforce, Access, Outlook, etc.\n\nFor any question, please email\nYouTube@LearnDataAnalysis.org'}, 'country': 'US'}}]}
-# print ('Channel Views:', (((r1['items'][0])['statistics'])['viewCount'] ))
-# print ('Subscribers:', (((r1['items'][0])['statistics'])['subscriberCount'] ))
-# # print ('# of Video:', (((r1['items'][0])['statistics'])['videoCount'] ))
-
-
-# # Video calls
-# print("\n\n")
-# print('Video Views:',((vidStat['items'][0])['statistics'])['viewCount'])
-# print('Likes:',((vidStat['items'][0])['statistics'])['likeCount'])
-# print('Comments:',((vidStat['items'][0])['statistics'])['commentCount'])
-
-
-
-
-# print("Title:", (((((vidSnippet['items'])[0])['snippet'])['title'])))
-# print("Channel Name:", (((((vidSnippet['items'])[0])['snippet'])['channelTitle'])))
-# print("Thumnail Link (medium size):", (((((((vidSnippet['items'])[0])['snippet']))['thumbnails'])['medium'])['url']))
-
-# # request4= youtube.channels().list(part='statistics',id=channelId)
-# # response4=request4.execute()
-# # print(response4)
-
-# print ('Channel Views:', (((channelStat['items'][0])['statistics'])['viewCount']))
-# print ('Subscribers:', (((channelStat['items'][0])['statistics'])['subscriberCount']))
-# print ('# of Video:', (((channelStat['items'][0])['statistics'])['videoCount']))
-
-# # How to get channel thumbnail photo
-# # request5= youtube.channels().list(part='snippet',id=channelId)
-# # response5=request5.execute()
-# # print(response5)
-
-# print('Channel Photo Link (medium size):',((((((channelSnippet['items'])[0])['snippet'])['thumbnails'])['medium'])['url']))
-# print('Country:',((((((channelSnippet['items'])[0])['snippet'])['country']))))
 
 
 ans= {
