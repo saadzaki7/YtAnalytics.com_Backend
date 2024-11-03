@@ -2,6 +2,22 @@
 
 A serverless backend implementation for YTAnalytics.com, processing and analyzing YouTube video metrics using AWS Lambda and DynamoDB.
 
+
+## 🎥 Demo & Quick Links
+[![Demo Video](https://img.shields.io/badge/Watch%20Demo-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=hoaRQoU7iuE)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)](https://github.com/saadzaki7/YtAnalytics.com_Backend)
+
+### Watch the Demo
+The [demo video](https://www.youtube.com/watch?v=hoaRQoU7iuE) provides a comprehensive walkthrough of YTAnalytics in action, featuring:
+- Live analysis of a trending YouTube video
+- Real-time metric extraction and processing
+- Demonstration of key features:
+  - Instant video statistics analysis
+  - Channel performance metrics
+  - Engagement rate calculations
+  - Geographic viewer distribution
+
+
 ## 🏗️ Architecture Evolution
 
 ### Current Architecture (Serverless Microservices)
