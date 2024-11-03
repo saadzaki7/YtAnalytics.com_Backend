@@ -5,6 +5,7 @@ A serverless backend implementation for YTAnalytics.com, processing and analyzin
 
 ## 🎥 Demo 
 [![Demo Video](https://img.shields.io/badge/Watch%20Demo-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=hoaRQoU7iuE)
+
 The [demo video](https://www.youtube.com/watch?v=hoaRQoU7iuE) provides a comprehensive walkthrough of YTAnalytics in action, featuring:
 - Live analysis of a trending YouTube video
 - Real-time metric extraction and processing
